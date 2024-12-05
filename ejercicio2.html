@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 2</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="ejercicio2.js" defer></script>
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-11">
+        <h2 class="text-center mb-2">Configuación de usuario</h2>
+        <form action="cambia_cuenta.php">
+          <p class="h3 mt-3">Inicio de sesión</p>
+          <div class="form-group mt-3 d-flex align-items-center" style="white-space: nowrap;">
+            <p>¿Cuándo quieres que Windows te vuelva a pedir que inicies sesión?</p>
+            <select class="form-control ml-3" name="apagar_windows" id="apagar_windows">
+              <option value="tras_suspension">Cuando el PC se activa tras haber estado en suspensión</option>
+              <option value="nunca">Nunca</option>
+            </select>
+          </div>
+          <p class="h3 mt-3">Contraseña</p>
+          <div class="form-group mt-3 p-0 col-md-4">
+              <label for="password">Nueva contraseña</label>
+              <input type="password" class="form-control" id="password">
+          </div>
+          <div class="form-group mt-3 p-0 col-md-4">
+            <label for="repetida_password">Vuelve a escribir la contraseña</label>
+            <input type="password" class="form-control" id="repetida_password">
+          </div>
+          <div class="form-group mt-3 p-0 col-md-4">
+            <label for="indicio_password">Indicio de Contraseña</label>
+            <textarea class="form-control" id="indicio_password" rows="3" style="resize: none;"></textarea>
+          </div>
+          <p class="h3 mt-3">Contraseña</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
