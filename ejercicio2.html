@@ -12,7 +12,7 @@
     <div class="row">
       <div class="col-md-11">
         <h2 class="text-center mb-2">Configuación de usuario</h2>
-        <form action="cambia_cuenta.php">
+        <form action="cambia_cuenta.php" id="form">
           <p class="h3 mt-3">Inicio de sesión</p>
           <div class="form-group mt-3 d-flex align-items-center" style="white-space: nowrap;">
             <p>¿Cuándo quieres que Windows te vuelva a pedir que inicies sesión?</p>
@@ -25,16 +25,27 @@
           <div class="form-group mt-3 p-0 col-md-4">
               <label for="password">Nueva contraseña</label>
               <input type="password" class="form-control" id="password">
+              <small class="form-text mb-2 text-error" id="password_error"></small>
           </div>
           <div class="form-group mt-3 p-0 col-md-4">
             <label for="repetida_password">Vuelve a escribir la contraseña</label>
             <input type="password" class="form-control" id="repetida_password">
+            <small class="form-text mb-2" id="repetida_password_error"></small>
           </div>
           <div class="form-group mt-3 p-0 col-md-4">
             <label for="indicio_password">Indicio de Contraseña</label>
             <textarea class="form-control" id="indicio_password" rows="3" style="resize: none;"></textarea>
+            <small class="form-text mb-2" id="indicio_password_error"></small>
           </div>
-          <p class="h3 mt-3">Contraseña</p>
+          <p class="h3 mt-3">Privacidad</p>
+          <div class="form-check mt-3">
+            <input class="form-check-input" type="checkbox" value="privacidad" id="privacidad">
+            <label class="form-check-label" for="privacidad">
+              Mostrar detalles de la cuenta en la pantalla de inicio de sesión
+            </label>
+            <small class="form-text mb-2" id="privacidad_error"></small>
+          </div>
+          <button type="submit" class="btn btn-primary mt-3" id="enviar_formulario">Aceptar</button>
         </form>
       </div>
     </div>

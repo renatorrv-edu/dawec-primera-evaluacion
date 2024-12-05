@@ -12,8 +12,8 @@ function esCurioso(n) {
     numBucle = Math.trunc(numBucle / 10);
   }
 
-  // El array guarda los números en orden inverso. Por ejemplo, 153 se guardaría
-  // como [3. 5. 1]. Igualmente, esto no influye porque queremos usar las sumas de sus cubos.
+  // El array guarda los dígitos en orden inverso. Por ejemplo, 153 se guardaría
+  // como [3, 5, 1]. Igualmente, esto no influye porque queremos usar las sumas de sus cubos.
   // El orden de los dígitos no es relevante.
 
   let sumaCubos = 0;
