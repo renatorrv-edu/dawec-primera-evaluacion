@@ -17,7 +17,7 @@
             <div class="form-group p-0 d-flex align-items-center col-md-12" style="white-space: nowrap;">
               <p class="mt-2 h6 mr-5">Alfabeto</p>
               <select class="form-control ml-3" name="alfabeto" id="alfabeto" required>
-                <option value="espanol">Castellano</option>
+                <option value="espanol">Español</option>
                 <option value="ingles">Inglés</option>
               </select>
             </div>
@@ -30,9 +30,10 @@
               <input type="number" class="form-control ml-3" id="rotado" name="rotado" min="0" max = "26" value="0" required>
             </div>
             <button type="submit" class="btn btn-primary mt-3 w-100" id="enviar">Descifrar</button>
-            <div class="card shadow d-none mt-5">
+            <div class="card shadow d-none mt-5" id="contenedor_resultado">
               <!--Mensaje descifrado-->
-              <p class="h6 text-danger" id="resultado"></p>
+              <div class="card-header h6">Resultado: </div>
+              <div class="card-body h5 text-danger mt-1 text-center" id="resultado"></p>
             </div>
           </div>
         </div>
