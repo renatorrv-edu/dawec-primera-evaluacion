@@ -16,23 +16,23 @@
             <p class="h3 mt-4 mb-4">Descifrar</p>
             <div class="form-group p-0 d-flex align-items-center col-md-12" style="white-space: nowrap;">
               <p class="mt-2 h6 mr-5">Alfabeto</p>
-              <select class="form-control ml-3" name="idioma" id="idioma">
-                <option value="castellano">Castellano</option>
+              <select class="form-control ml-3" name="alfabeto" id="alfabeto" required>
+                <option value="espanol">Castellano</option>
                 <option value="ingles">Inglés</option>
               </select>
             </div>
             <div class="form-group mt-4 p-0 col-md-12">
               <label for="texto_descifrar" class="h6">Texto a descifrar</label>
-              <textarea class="form-control" id="texto_descifrar" rows="3" style="resize: none;"></textarea>
+              <textarea class="form-control" id="texto_descifrar" rows="3" style="resize: none;" required></textarea>
             </div>
             <div class="form-group mt-4 p-0 d-flex align-items-center col-md-12" style="white-space: nowrap;">
               <label for="rotado" class="mt-2 h6">Nivel de Rotado</label>
-              <input type="number" class="form-control ml-3" id="rotado" name="rotado" min="0">
+              <input type="number" class="form-control ml-3" id="rotado" name="rotado" min="0" max = "26" value="0" required>
             </div>
-            <button type="submit" class="btn btn-primary mt-3 w-100" id="enviar_formulario">Descifrar</button>
+            <button type="submit" class="btn btn-primary mt-3 w-100" id="enviar">Descifrar</button>
             <div class="card shadow d-none mt-5">
               <!--Mensaje descifrado-->
-              <p class="h6 text-danger" id="texto_descifrado"></p>
+              <p class="h6 text-danger" id="resultado"></p>
             </div>
           </div>
         </div>
